@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Web Page</title>
+    <style>
+        body {
+            margin: 0px 150px;
+        }
+
+        .logo {
+            width: 50px;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 70px;
+            background-color: #f1f1f1;
+        }
+
+        nav li {
+            display: inline;
+            list-style: none;
+        }
+
+        .breadcrumb {
+            padding: 10px 80px;
+        }
+
+        main {
+            padding: 5px 170px;
+        }
+
+        .content {
+            padding: 10px 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .thumbnail {
+            width: 220px;
+            margin-bottom: 10px;
+        }
+
+        .image {
+            display: flex;
+        }
+
+        .img2 {
+            width: 60px;
+            margin-right: 15px;
+        }
+
+        .border {
+            border: 3px solid #999393;
+            border-radius: 20px;
+        }
+
+        #pesan {
+            background-color: #f1f1f1;
+            border: 2px solid #999393;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+        }
+        .varian {
+            display: flex;        }
+        .kotak {
+            display: flex;
+            flex-direction: column;
+            margin-right: 5px;
+        }
+
+        .kotak p {
+            margin: 0px;
+        }
+
+        .kotak1 {
+            width: 40px;
+            height: 30px;
+            border: 2px solid #999393;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="profile">
+            <img class="logo"
+                src="keranjang.png" alt="">
+            <h3>Fadfadya Store</h3>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Fashion Pria</a></li>
+                <li>|</li>
+                <li><a href="#">Fashion Wanita</a></li>
+                <li>|</li>
+                <li><a href="#">Fashion Muslim</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="search" name="search" id="search" placeholder="Search">
+            <a href="#">Cart (1)</a>
+        </div>
+    </header>
+    <div class="breadcrumb">
+        <a href="#">Home</a> > <a href="#">Fashion Pria</a> > kaos Programmer
+    </div>
+    <main>
+        <div class="content">
+            <div class="foto">
+                <img class="thumbnail border"
+                    src="https://www.malasngoding.com/wp-content/uploads/2017/07/kaos-have-no-life.png" alt="">
+                <div class="image">
+                    <img class="img2 border"
+                        src="https://www.malasngoding.com/wp-content/uploads/2017/07/kaos-have-no-life.png" alt="">
+                    <img class="img2 border"
+                        src="https://www.malasngoding.com/wp-content/uploads/2017/07/kaos-have-no-life.png" alt="">
+                    <img class="img2 border"
+                        src="https://www.malasngoding.com/wp-content/uploads/2017/07/kaos-have-no-life.png" alt="">
+                </div>
+
+                <div class="button">
+                    <button id="pesan">Pesan</button>
+                </div>
+            </div>
+            <div class="product">
+                <h1>Kaos Programmer</h1>
+                <h3>Rp. 100.000</h3>
+                <p>***** 2 ulasan</p>
+                <p>Pilih Varian warna</p>
+                <div class="varian">
+                    <div class="kotak">
+                        <div class="kotak1" style="background-color: #000;"></div>
+                        <p>Hitam</p>
+                    </div>
+                    <div class="kotak">
+                        <div class="kotak1" style="background-color: #fff;"></div>
+                        <p>Putih</p>
+                    </div>
+
+                    <div class="kotak">
+                        <div class="kotak1" style="background-color: #000080;"></div>
+                        <p>Navy</p>
+                    </div>
+                    <div class="kotak">
+                        <div class="kotak1" style="background-color: #4B2530;"></div>
+                        <p>Army</p>
+                    </div>
+                </div>
+
+                <p>Pilih Ukuran</p>
+                <div class="varian">
+                    <div class="kotak">
+                        <div class="kotak1">M</div>
+                    </div>
+
+                    <div class="kotak">
+                        <div class="kotak1">L</div>
+                    </div>
+
+                    <div class="kotak">
+                        <div class="kotak1">XL</div>
+                    </div>
+
+                    <div class="kotak">
+                        <div class="kotak1">XXL</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="deskripsi">
+            <h3>deskripsi Produk</h3>
+            <p>Kaos ini terbuat dari bahan katun combed 24s yang berkualitas tinggi dan nyaman dipakai. Desainnya keren dan unik, cocok
+            untuk para programmer yang ingin menunjukkan jati dirinya. Kaos ini tersedia dalam berbagai ukuran, mulai dari S hingga
+            XL. Anda dapat memilih ukuran yang sesuai dengan ukuran tubuh Anda. Kaos ini cocok dipakai untuk berbagai acara, baik
+            untuk sehari-hari maupun untuk acara khusus. Dapatkan kaos ini sekarang juga dan tunjukkan keahlianmu sebagai
+            programmer!</p>
+        </div>
+    </main>
+
+</body>
+
+</html>
